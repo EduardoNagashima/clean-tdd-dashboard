@@ -8,6 +8,9 @@
     "prepare": "husky"
   },
   "author": "",
+  "standard": {
+    "env": ["jest"]
+  },
   "license": "ISC",
   "devDependencies": {
     "husky": "^9.1.7",
