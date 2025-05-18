@@ -2,10 +2,12 @@
   "name": "clean-tdd-dashboard",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged": "jest",
+    "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watchAll --passWithNoTests",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests",
+    "test:staged": "npm test",
     "prepare": "husky"
   },
   "author": "",
